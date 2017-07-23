@@ -13,6 +13,7 @@ namespace ControlesApp
         {
             InitializeComponent();
 
+
             MainPage = new NavigationPage(new ControlesApp.SliderPage() { Title= "Picker"});
         }
 

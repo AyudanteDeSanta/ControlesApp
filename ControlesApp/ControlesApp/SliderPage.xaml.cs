@@ -18,6 +18,8 @@ namespace ControlesApp
         {
             InitializeComponent();
             InitApp();
+
+
         }
 
         private void InitApp()
@@ -34,6 +36,9 @@ namespace ControlesApp
                 pickerColor.Items.Add(color.Name);
             }
 
+
+            indicator_image.SetBinding(ActivityIndicator.IsRunningProperty, "IsLoading");
+            indicator_image.BindingContext = image_loading;
         }
 
         private void PickerColor_SelectedIndexChanged(object sender, EventArgs e)

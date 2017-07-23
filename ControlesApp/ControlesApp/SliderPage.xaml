@@ -18,4 +18,10 @@
             
         </DatePicker>
     </StackLayout>
+
+    <StackLayout>
+        <ActivityIndicator x:Name="indicator_image" Color="Chocolate" IsRunning="True" ></ActivityIndicator>
+        <Image x:Name="image_loading" Source="http://lorempixel.com/400/400/people/1"></Image>
+
+    </StackLayout>
 </ContentPage>
