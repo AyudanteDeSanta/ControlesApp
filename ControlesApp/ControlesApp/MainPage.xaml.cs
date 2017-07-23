@@ -13,5 +13,20 @@ namespace ControlesApp
         {
             InitializeComponent();
         }
+
+        protected override void OnAppearing()
+        {
+            base.OnAppearing();
+            SwitchSave.OnChanged += SwitchSave_OnChanged;
+        }
+
+        private void SwitchSave_OnChanged(object sender, ToggledEventArgs e)
+        {
+            if (e.Value)
+            {
+                var userName = BoxUsuario.Text;
+                DisplayAlert("Message", userName, "Aceptar");
+            }
+        }
     }
 }

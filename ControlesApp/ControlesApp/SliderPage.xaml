@@ -1,0 +1,21 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="ControlesApp.SliderPage">
+    <StackLayout>
+        <BoxView BindingContext="{x:Reference SliderElement}" Opacity="{Binding Value}" Color="Blue"></BoxView>
+        <Slider x:Name="SliderElement" Value="0.5"></Slider>
+    </StackLayout>
+
+    <StackLayout Margin="10,12">
+        <Label Text="Selecciona un color"></Label>
+        <Picker x:Name="pickerColor" SelectedIndexChanged="PickerColor_SelectedIndexChanged"></Picker>
+        <BoxView x:Name="boxColor" VerticalOptions="CenterAndExpand"></BoxView>
+    </StackLayout>
+
+    <StackLayout>
+        <DatePicker Date="1988-07-07" MaximumDate="2018-12-31" MinimumDate="1990-01-01" DateSelected="DatePicker_DateSelected">
+            
+        </DatePicker>
+    </StackLayout>
+</ContentPage>

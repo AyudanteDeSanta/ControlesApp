@@ -4,8 +4,21 @@
              xmlns:local="clr-namespace:ControlesApp"
              x:Class="ControlesApp.MainPage">
 
-	<Label Text="Welcome to Xamarin Forms!" 
-           VerticalOptions="Center" 
-           HorizontalOptions="Center" />
+    <ContentPage.Padding>
+        <OnPlatform x:TypeArguments="Thickness"
+                    iOS="0,0,0,0" Android="0,0,0,0" WinPhone="12,10,12,10">
+            
+        </OnPlatform>
+    </ContentPage.Padding>
 
+    <StackLayout>
+        <TableView Intent="Form">
+            <TableRoot>
+                <TableSection Title="Registro">
+                    <EntryCell Label="Usuario" x:Name="BoxUsuario"></EntryCell>
+                    <SwitchCell Text="Capturar" x:Name="SwitchSave"></SwitchCell>
+                </TableSection>
+            </TableRoot>
+        </TableView>
+    </StackLayout>
 </ContentPage>
