@@ -42,8 +42,14 @@
     <Compile Include="HamburguerMenuPage.xaml.cs">
       <DependentUpon>HamburguerMenuPage.xaml</DependentUpon>
     </Compile>
+    <Compile Include="InicioTabPage.xaml.cs">
+      <DependentUpon>InicioTabPage.xaml</DependentUpon>
+    </Compile>
     <Compile Include="MainPage.xaml.cs">
       <DependentUpon>MainPage.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="PerfilTab.xaml.cs">
+      <DependentUpon>PerfilTab.xaml</DependentUpon>
     </Compile>
     <Compile Include="PersitenciaPage.xaml.cs">
       <DependentUpon>PersitenciaPage.xaml</DependentUpon>
@@ -57,6 +63,9 @@
     </Compile>
     <Compile Include="SliderPage.xaml.cs">
       <DependentUpon>SliderPage.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="TabPage.xaml.cs">
+      <DependentUpon>TabPage.xaml</DependentUpon>
     </Compile>
   </ItemGroup>
   <ItemGroup>
@@ -109,6 +118,24 @@
   </ItemGroup>
   <ItemGroup>
     <EmbeddedResource Include="SettingPage.xaml">
+      <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="TabPage.xaml">
+      <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="InicioTabPage.xaml">
+      <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="PerfilTab.xaml">
       <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
       <SubType>Designer</SubType>
     </EmbeddedResource>
