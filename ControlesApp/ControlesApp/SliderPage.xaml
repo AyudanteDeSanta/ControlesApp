@@ -19,8 +19,8 @@
         </DatePicker>
     </StackLayout>
 
-    <StackLayout>
-        <ActivityIndicator x:Name="indicator_image" Color="Chocolate" IsRunning="True" ></ActivityIndicator>
+    <StackLayout Margin="30,20">
+        <ActivityIndicator x:Name="indicator_image" Color="Orange" IsRunning="True" ></ActivityIndicator>
         <Image x:Name="image_loading" Source="http://lorempixel.com/400/400/people/1"></Image>
 
     </StackLayout>

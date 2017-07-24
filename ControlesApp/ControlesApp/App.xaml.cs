@@ -13,8 +13,8 @@ namespace ControlesApp
         {
             InitializeComponent();
 
-
-            MainPage = new NavigationPage(new ControlesApp.SliderPage() { Title= "Picker"});
+            MainPage = new HamburguerMenuPage();
+            //MainPage = new NavigationPage(new ControlesApp.SliderPage() { Title= "Picker"});
         }
 
         protected override void OnStart()

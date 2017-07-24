@@ -39,13 +39,22 @@
       <DependentUpon>App.xaml</DependentUpon>
     </Compile>
     <Compile Include="ColorItem.cs" />
+    <Compile Include="HamburguerMenuPage.xaml.cs">
+      <DependentUpon>HamburguerMenuPage.xaml</DependentUpon>
+    </Compile>
     <Compile Include="MainPage.xaml.cs">
       <DependentUpon>MainPage.xaml</DependentUpon>
     </Compile>
     <Compile Include="PersitenciaPage.xaml.cs">
       <DependentUpon>PersitenciaPage.xaml</DependentUpon>
     </Compile>
+    <Compile Include="PrincipalPage.xaml.cs">
+      <DependentUpon>PrincipalPage.xaml</DependentUpon>
+    </Compile>
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="SettingPage.xaml.cs">
+      <DependentUpon>SettingPage.xaml</DependentUpon>
+    </Compile>
     <Compile Include="SliderPage.xaml.cs">
       <DependentUpon>SliderPage.xaml</DependentUpon>
     </Compile>
@@ -82,6 +91,24 @@
   </ItemGroup>
   <ItemGroup>
     <EmbeddedResource Include="SliderPage.xaml">
+      <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="HamburguerMenuPage.xaml">
+      <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="PrincipalPage.xaml">
+      <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="SettingPage.xaml">
       <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
       <SubType>Designer</SubType>
     </EmbeddedResource>
