@@ -10,11 +10,14 @@ using Xamarin.Forms.Xaml;
 namespace ControlesApp
 {
 	[XamlCompilation(XamlCompilationOptions.Compile)]
-	public partial class TabPage : TabbedPage
+	public partial class TabPage : TabbedPage //CarouselPage
 	{
 		public TabPage ()
 		{
 			InitializeComponent ();
+
+            
+
             Children.Add(new InicioTabPage());
             Children.Add(new PerfilTab());
 
