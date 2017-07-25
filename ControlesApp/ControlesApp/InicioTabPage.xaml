@@ -3,7 +3,7 @@
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="ControlesApp.InicioTabPage">
     <StackLayout Padding="12">
-        <Label Text="Página de inicio"></Label>
-        <Button Text="Presioname"></Button>
+        <Label Text="Página de inicio" x:Name="LabelCiudad"></Label>
+        <Button Text="Presioname" x:Name="BtnSolicitar" Clicked="BtnSolicitar_Clicked"></Button>
     </StackLayout>
 </ContentPage>
